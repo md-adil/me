@@ -12,4 +12,9 @@ $(function() {
     $('body').backstretch(Object.values(banners), {
         duration: 3200, fade: 1300
     });
+
+    $('.btn-expand').click(function(e) {
+        e.preventDefault();
+        $(this).siblings(".expandable").slideToggle();
+    });
 });
