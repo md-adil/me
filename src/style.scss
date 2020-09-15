@@ -33,7 +33,7 @@
  @import "node_modules/bootstrap/scss/progress";
 //  @import "node_modules/bootstrap/scss/media";
 //  @import "node_modules/bootstrap/scss/list-group";
-//  @import "node_modules/bootstrap/scss/close";
+ @import "node_modules/bootstrap/scss/close";
 //  @import "node_modules/bootstrap/scss/toasts";
 //  @import "node_modules/bootstrap/scss/modal";
 //  @import "node_modules/bootstrap/scss/tooltip";
@@ -51,5 +51,28 @@
     float: right;
     &:hover {
         color: #BBB;
+    }
+}
+.full-skills {
+    padding: 40px;
+    margin-top: 30px;
+    background: #fff;
+    .skill {
+        margin-bottom: 20px;
+    }
+    .skill-description {
+        margin-left: 10px;
+    }
+    .skill-heading {
+        text-align: center;
+        strong {
+            border-bottom: 1px solid #858789;
+        }
+        margin-bottom: 10px;
+    }
+}
+.btn-more-skills {
+    &, &:hover {
+        color: #fff;
     }
 }

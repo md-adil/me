@@ -7,7 +7,7 @@ import banners from "../images/banners/*.jpg";
 
 $(function() {
     // PRELOADER
-    $('.preloader').delay(1000).fadeOut("slow"); // set duration in brackets    
+    $('.preloader').delay(1).fadeOut("slow"); // set duration in brackets    
     // HOME BACKGROUND SLIDESHOW
     $('body').backstretch(Object.values(banners), {
         duration: 3200, fade: 1300
@@ -17,4 +17,11 @@ $(function() {
         e.preventDefault();
         $(this).siblings(".expandable").slideToggle();
     });
+    $('.btn-more-skills').click(function(e) {
+        e.preventDefault();
+        $('.skills-container').slideToggle();
+    })
+    $('.skill-close').click(function() {
+        $('.skills-container').slideUp();
+    })
 });
