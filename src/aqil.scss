@@ -1,0 +1,84 @@
+
+// Aqil
+.backstretch {
+    position: absolute !important;
+  }
+  .spacer-top {
+    padding-top: 50px;
+  }
+  body {
+    background-color: #f9f9f9;
+  }
+  
+  .btn-more-skills.white {
+    background: #fff;
+      color: #3366cc;
+      padding: 10px 40px;
+      font-size: 18px;
+      border-radius: 40px;
+      text-decoration: none;
+      margin-top: 20px;
+      display: inline-block;
+      /* text-transform: uppercase; */
+      /* line-height: 1.5; */
+      vertical-align: middle;
+  }
+  .footer {
+    background: url(../images/adil_footer.jpg) center no-repeat;
+      display: block;
+      width: 100%;
+      background-size: cover;
+      margin-top: 50px;
+      background-attachment: fixed;
+      position: relative;
+      background-position: top;
+  }
+  .footer:before {
+    content: '';
+    background-color: #3366ccd1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+  
+  .social-icons li a {
+    background: #ffffff;
+    border-radius: 50%;
+    color: #36c;
+    
+  }
+  .tm-border {
+    border: none;
+    box-shadow: rgb(51 102 204 / 87%) -43px 2px;
+  }
+  .shadow {
+    text-shadow: rgb(0 0 0 / 27%) 5px 8px 7px;
+  }
+  .title {
+    text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 12px;
+  }
+  .tm-title {
+    color: #fff;
+    font-size: 70px;
+  }
+  .accent {
+    font-family: "Proxima Bold";
+    line-height: 14px;
+    color: rgb(237 237 237);
+  }
+  header {
+    padding-top: 128px;
+    background: rgb(51 102 204 / 85%);
+  }
+  a {
+    color: rgb(51 102 204);
+    text-decoration: none;
+  }
+  .theme-color {
+    color: #3366cc !important;
+  }

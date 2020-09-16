@@ -1,5 +1,4 @@
 import $ from "jquery";
-import "bootstrap";
 (window as any).jQuery = $;
 import "jquery-backstretch";
 import banners from "../images/banners/*.jpg";
