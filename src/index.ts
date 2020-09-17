@@ -18,7 +18,15 @@ $(function() {
     });
     $('.btn-more-skills').click(function(e) {
         e.preventDefault();
-        $('.skills-container').slideToggle();
+        const container = $('.skills-container');
+        const isHidden = container.is(":hidden");
+        $('.skills-container').slideToggle(() => {
+            if (isHidden) {
+                $('html, body').animate({
+                    scrollTop: container.offset()?.top ?? 0 
+                });
+            }
+        });
     })
     $('.skill-close').click(function() {
         $('.skills-container').slideUp();
