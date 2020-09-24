@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@fancyapps/fancybox@^3.5.7":
+  version "3.5.7"
+  resolved "https://registry.yarnpkg.com/@fancyapps/fancybox/-/fancybox-3.5.7.tgz#12f8734663ec6eae7f9236b92ca236e6e07fdfd5"
+  integrity sha512-rcEtu8t+WnmqIDV/Wfm1yvy/nDdwc7YV25j9HLxGC2/WOsUhk9rcWg2nB8g1BrjRt9zaoADdjHTU6ILYTJzBBg==
+
+"@types/fancybox@^3.5.2":
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/@types/fancybox/-/fancybox-3.5.2.tgz#18e4e5341c51d61d3de45255e88f4d192ddd9b4b"
+  integrity sha512-xjUOKP5KfN9VjRZjnLrfsalNNik6rt8kns/6Ovv0SDR5te8GPN3buWhZNjCUgn1lHxOo1BZOOb7peDAAkZvoyw==
+  dependencies:
+    "@types/jquery" "*"
+
 "@types/jquery-backstretch@^2.0.15":
   version "2.0.15"
   resolved "https://registry.yarnpkg.com/@types/jquery-backstretch/-/jquery-backstretch-2.0.15.tgz#101fc24e9e573395a87d76d4c5128033be1eff8e"
@@ -451,6 +463,11 @@ esprima@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
+
+fancybox@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/fancybox/-/fancybox-3.0.1.tgz#13f6927449157ed026c69e78c2ba5bf0f1da9af7"
+  integrity sha512-HZ57O6j5Zk4Uvusd5pNUgWi7CCjKx+HFlCzjMPeRJ//0bQWUK+xVpkn3EzXWJate4ZSKNFP9kU2l49MP1g+oow==
 
 fclone@^1.0.11:
   version "1.0.11"

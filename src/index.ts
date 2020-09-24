@@ -1,7 +1,11 @@
+declare var require: any;
 import $ from "jquery";
 (window as any).jQuery = $;
 import "jquery-backstretch";
 import banners from "../images/banners/*.jpg";
+import "@fancyapps/fancybox";
+import "@fancyapps/fancybox/dist/jquery.fancybox.css";
+import photos from "../images/photos/*.jpg";
 // templatemo 467 easy profile
 
 $(function() {
@@ -31,4 +35,15 @@ $(function() {
     $('.skill-close').click(function() {
         $('.skills-container').slideUp();
     })
+  
+    const $photos = $(".photos");
+    Object.values(photos).forEach((photo) => {
+        $photos.append(
+            $("<a />", {href: photo, "data-fancybox": "gallery"})
+        );
+    });
+
+    $('[data-fancybox="gallery"]').fancybox({
+        // Options will go here
+    });
 });
