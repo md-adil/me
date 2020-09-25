@@ -24,7 +24,12 @@ $(function() {
         e.preventDefault();
         const container = $('.skills-container');
         const isHidden = container.is(":hidden");
-        $('.skills-container').slideToggle(() => {
+        if (!isHidden) {
+            $('html, body').animate({
+                scrollTop: container.offset()?.top ?? 0 
+            });
+        }
+        $('.skills-container').slideDown(() => {
             if (isHidden) {
                 $('html, body').animate({
                     scrollTop: container.offset()?.top ?? 0 
@@ -46,4 +51,9 @@ $(function() {
     $('[data-fancybox="gallery"]').fancybox({
         // Options will go here
     });
+
+    $('.btn-about-more').on("click", (e) => {
+        e.preventDefault();
+        $('.about-more').slideToggle();
+    })
 });
