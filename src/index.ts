@@ -10,7 +10,7 @@ import photos from "../images/photos/*.jpg";
 
 $(function() {
     // PRELOADER
-    $('.preloader').delay(1).fadeOut("slow"); // set duration in brackets    
+    $('.preloader').delay(500).fadeOut("slow"); // set duration in brackets    
     // HOME BACKGROUND SLIDESHOW
     $('body').backstretch(Object.values(banners), {
         duration: 3200, fade: 1300
