@@ -16,10 +16,12 @@ $(function() {
         duration: 3200, fade: 1300
     });
 
-    $('.btn-expand').click(function(e) {
+    $('.btn-expand').on("click", function(e) {
         e.preventDefault();
+        $(this).text() !== "Less" ? $(this).text("Less") : $(this).text("More");
         $(this).siblings(".expandable").slideToggle();
     });
+    
     $('.btn-more-skills').click(function(e) {
         e.preventDefault();
         const container = $('.skills-container');
