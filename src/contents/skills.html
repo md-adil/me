@@ -1,11 +1,13 @@
 <div class="col-md-6 col-sm-12">
     <div class="skills">
         <h2 class="white">Skills</h2>
-        <strong>Javascript / Typescript</strong>
-        <span class="pull-right">80%</span>
-        <div class="progress">
-            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-        </div>
+        <each loop="skill in skills">
+            <strong>{{ skill.name }}</strong>
+            <span class="pull-right">{{ skill.percent }}%</span>
+            <div class="progress">
+                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="{{ value.percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ skill.percent }}%;"></div>
+            </div>
+        </each>
         <strong>Nodejs / MongoDB</strong>
         <span class="pull-right">70%</span>
         <div class="progress">

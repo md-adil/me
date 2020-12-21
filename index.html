@@ -5,8 +5,8 @@
 	<title>{{ title }}</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="keywords" content="Adil, Software Engineer, Coder, Programmer" />
-	<meta name="description" content="Self taught Computer Programmer, Motivated and Dedicated to Computer and Science, Code Enthusiasts, Philanthropist, Tech Junkie and Gymnast." />
+	<meta name="keywords" content="{{ keywords }}" />
+	<meta name="description" content="{{ description }}" />
 	<link rel="stylesheet" href="./src/style.scss" />
 	<link rel="stylesheet" href="./css/font-awesome.min.css" />
 	<link rel="stylesheet" href="./css/templatemo-blue.css" />
@@ -38,7 +38,6 @@
 		<include src="contents/skills.html" />
 	</div>
 </section>
-
 <!-- education and languages -->
 <section class="container">
 	<div class="row">
@@ -83,13 +82,12 @@
 </footer>
 <!-- javascript js -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179114867-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_code }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'UA-179114867-1');
+  gtag('config', '{{ ga_code }}');
 </script>
 
 <script src="./src/index.ts"></script>
