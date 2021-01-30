@@ -24,21 +24,8 @@ $(function() {
     
     $('.btn-more-skills').click(function(e) {
         e.preventDefault();
-        const container = $('.skills-container');
-        const isHidden = container.is(":hidden");
-        if (!isHidden) {
-            $('html, body').animate({
-                scrollTop: container.offset()?.top ?? 0 
-            });
-        }
-        $('.skills-container').slideDown(() => {
-            if (isHidden) {
-                $('html, body').animate({
-                    scrollTop: container.offset()?.top ?? 0 
-                });
-            }
-        });
-    })
+        expandSkills();
+    });
     $('.skill-close').click(function() {
         $('.skills-container').slideUp();
     })
@@ -57,5 +44,39 @@ $(function() {
     $('.btn-about-more').on("click", (e) => {
         e.preventDefault();
         $('.about-more').slideToggle();
+    });
+    
+    $('#skill-overview a:not(.btn-more-skills)').on("click", function(e) {
+        e.preventDefault();
+        const fullSkills =  $('.skills-container');
+        if (fullSkills.is(':hidden')) {
+            fullSkills.slideDown(() => {
+                $($(this).attr("href")!).get(0)?.scrollIntoView({behavior: "smooth"});
+            })
+        } else {
+            $($(this).attr("href")!).get(0)?.scrollIntoView({behavior: "smooth"});
+        }
+    });
+
+    const expandSkills = (cb?: () => void) => {
+        const container = $('.skills-container');
+        const isHidden = container.is(":hidden");
+        if (!isHidden) {
+            $('html, body').animate({
+                scrollTop: container.offset()?.top ?? 0 
+            }, cb);
+        }
+        $('.skills-container').slideDown(() => {
+            if (isHidden) {
+                $('html, body').animate({
+                    scrollTop: container.offset()?.top ?? 0 
+                }, cb);
+            }
+        });
+    }
+    $('[data-scroll-to]').on('click', function(e) {
+        e.preventDefault();
+        const view = $(this).attr('data-scroll-to');
+        $(view!).get(0)?.scrollIntoView({ behavior: 'smooth' });
     })
 });

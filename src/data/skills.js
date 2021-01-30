@@ -1,3 +1,3 @@
 module.exports = [
-    { name: 'Javascript / Typescript', percent: 80 },
+    { name: '<a href="#skills-javascript">Javascript</a> / <a href="#skills-typescript">Typescript</a>', percent: 80 },
 ];

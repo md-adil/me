@@ -46,6 +46,11 @@ body {
 .progress {
     margin-bottom: 20px;
 }
+.skills {
+    a {
+        color: #fff;
+    }
+}
 
 .btn-expand {
     float: right;
@@ -74,5 +79,22 @@ body {
 .btn-more-skills {
     &, &:hover {
         color: #fff;
+    }
+}
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+.nav {
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
     }
 }
