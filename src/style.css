@@ -18,12 +18,6 @@ body {
     }
 }
 
-.btn-expand {
-    float: right;
-    &:hover {
-        color: #BBB;
-    }
-}
 .full-skills {
     padding: 40px;
     margin-top: 30px;
