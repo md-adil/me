@@ -7,9 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="keywords" content="{{ keywords }}" />
 	<meta name="description" content="{{ description }}" />
-	<link rel="stylesheet" href="./src/style.scss" />
+	<link rel="stylesheet" href="./src/style.css" />
 	<link rel="stylesheet" href="./css/font-awesome.min.css" />
-	<link rel="stylesheet" href="./css/templatemo-blue.css" />
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
 <!-- preloader section -->
@@ -18,45 +17,46 @@
        <span class="sk-inner-circle"></span>
      </div>
 </div>
-
 <!-- header section -->
 <header>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12">
-				<include src="contents/header.html" />
-			</div>
+	<div class="container mx-auto">
+		<div class="flex justify-center items-center text-white text-center" style="height: 80vh">
+			<include src="contents/header.html" />
 		</div>
 	</div>
 </header>
+<div class="space-y-4">
 <!-- about and skills section -->
-<section class="container">
-	<div class="row">
-		<div class="col-md-6 col-sm-12">
+<section class="container mx-auto space-y-4">
+	<div class="flex space-x-4">
+		<div class="flex-1">
 			<include src="contents/about.html" />
 		</div>
-		<include src="contents/skills.html" />
+		<div class="flex-1">
+			<include src="contents/skills.html" />
+		</div>
 	</div>
+	<include src="contents/detailed-skills.html" />
 </section>
 <!-- education and languages -->
-<section class="container">
-	<div class="row">
-		<div class="col-md-8 col-sm-12">
+<section class="container mx-auto">
+	<div class="flex space-x-4">
+		<div class="">
 			<include src="contents/education.html" />
 		</div>
-		<div class="col-md-4 col-sm-12">
+		<div class="w-1/3">
 			<include src="contents/languages.html" />
 		</div>
 	</div>
 </section>
 
 <!-- contact and experience -->
-<section class="container">
-	<div class="row">
-		<div class="col-md-4 col-sm-12">
+<section class="container mx-auto">
+	<div class="flex space-x-4">
+		<div class="w-1/3">
 			<include src="contents/contact.html" />
 		</div>
-		<div class="col-md-8 col-sm-12">
+		<div>
 			<include src="contents/experiences.html" />
 		</div>
 	</div>
@@ -64,7 +64,7 @@
 
 <!-- footer section -->
 <footer>
-	<div class="container">
+	<div class="container mx-auto">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 				<p>Copyright &copy; 2020 Adil</p>
@@ -80,8 +80,13 @@
 		</div>
 	</div>
 </footer>
+</div>
 <!-- javascript js -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_code }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -89,7 +94,6 @@
   gtag('js', new Date());
   gtag('config', '{{ ga_code }}');
 </script>
-
 <script src="./src/index.ts"></script>
 </body>
 </html>

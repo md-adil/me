@@ -1,0 +1,19 @@
+.card {
+    @apply bg-white shadow-sm divide-y;
+}
+
+.card.card-secondary {
+    @apply bg-indigo-500 divide-indigo-400 text-white;
+}
+
+.card .card-title {
+    @apply text-xl font-medium;
+}
+
+.card .card-body, .card .card-footer, .card .card-header  {
+    @apply py-4 px-6;
+}
+
+.icon-btn {
+    @apply rounded-full hover:bg-gray-100 transition w-10 h-10 focus:outline-none focus:bg-gray-300;
+}

@@ -1,9 +1,9 @@
+const dotenv = require('dotenv');
+dotenv.config();
 const skills = require("./src/data/skills");
-
 const envs = [
   'title', 'description', 'keywords', 'ga_code'
 ];
-
 const locals =  envs.reduce((locals, key) => ({ ...locals, [key]: process.env[key.toUpperCase()] }), {});
 module.exports = {
     plugins: {

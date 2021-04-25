@@ -1,0 +1,61 @@
+@tailwind base;
+@import "./components.css";
+@tailwind components;
+@tailwind utilities;
+body {
+    background: #000;
+}
+.backstretch {
+    opacity: 0.5;
+}
+.progress {
+    margin-bottom: 20px;
+}
+
+.skills {
+    a {
+        color: #fff;
+    }
+}
+
+.btn-expand {
+    float: right;
+    &:hover {
+        color: #BBB;
+    }
+}
+.full-skills {
+    padding: 40px;
+    margin-top: 30px;
+    background: #fff;
+    .skill {
+        margin-bottom: 20px;
+    }
+    .skill-description {
+        margin-left: 10px;
+    }
+    .skill-heading {
+        text-align: center;
+        strong {
+            border-bottom: 1px solid #858789;
+        }
+        margin-bottom: 10px;
+    }
+}
+.btn-more-skills {
+    &, &:hover {
+        color: #fff;
+    }
+}
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
