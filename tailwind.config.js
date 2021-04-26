@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+const primary = colors.blue;
 module.exports = {
   purge: [
     "./index.html",
@@ -5,7 +7,13 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: primary["500"],
+        "primary-light": primary["300"],
+        "primary-dark": primary["700"]
+      }
+    },
   },
   variants: {
     extend: {},

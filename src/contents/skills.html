@@ -1,44 +1,92 @@
-<div class="card card-secondary">
+<div class="card primary">
     <div class="card-header">
-        <h2 class="card-title">
-            Skills
-        </h2>
+        <h2 class="card-title">Skills</h2>
     </div>
     <div class="card-body" id="skill-overview">
         <each loop="skill in skills">
-            <strong>{{{ skill.name }}}</strong>
+            <span>{{{ skill.name }}}</span>
             <span class="pull-right">{{ skill.percent }}%</span>
             <div class="progress">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="{{ value.percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ skill.percent }}%;"></div>
+                <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="{{ value.percent }}"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: {{ skill.percent }}%;"
+                ></div>
             </div>
         </each>
-        <strong><a href="#skills-node-js">Nodejs</a> / <a href="#skills-mongodb">MongoDB</a></strong>
+        <span
+            ><a href="#skills-node-js">Nodejs</a> /
+            <a href="#skills-mongodb">MongoDB</a></span
+        >
         <span class="pull-right">70%</span>
         <div class="progress">
-            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+            <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 70%"
+            ></div>
         </div>
-        <strong><a href="#skills-php">PHP</a> / <a href="#skills-mysql">MySQL</a></strong>
+        <span
+            ><a href="#skills-php">PHP</a> /
+            <a href="#skills-mysql">MySQL</a></span
+        >
         <span class="pull-right">90%</span>
         <div class="progress">
-            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+            <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 90%"
+            ></div>
         </div>
-        <strong><a href="#skills-react">React</a></strong>
+        <span><a href="#skills-react">React</a></span>
         <span class="pull-right">85%</span>
         <div class="progress">
-            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+            <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 85%"
+            ></div>
         </div>
-        <strong><a href="#skills-javascript">Vue</a></strong>
+        <span><a href="#skills-javascript">Vue</a></span>
         <span class="pull-right">65%</span>
         <div class="progress">
-            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+            <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 65%"
+            ></div>
         </div>
-        <strong><a href="#skills-python">Python</a></strong>
+        <span><a href="#skills-python">Python</a></span>
         <span class="pull-right">50%</span>
         <div class="progress">
-            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+            <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+            ></div>
         </div>
         <div class="text-right">
-            <a href="#" class="btn-more-skills white">Please checkout full skills with details.</a>
+            <a href="#" class="btn-more-skills white"
+                >Please checkout full skills with details.</a
+            >
         </div>
     </div>
 </div>
