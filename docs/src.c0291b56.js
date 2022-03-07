@@ -29,19 +29,19 @@ module.exports="/me/IMG_20191211_161140.3697ee4f.jpg";
 module.exports="/me/IMG_20191226_130135.105aa146.jpg";
 },{}],"R6c6":[function(require,module,exports) {
 module.exports="/me/IMG_20200104_230058_943.f39ca503.jpg";
-},{}],"DA4W":[function(require,module,exports) {
-module.exports="/me/IMG_20200313_123608_2.f0c6c257.jpg";
+},{}],"aAT6":[function(require,module,exports) {
+module.exports="/me/IMG_20191202_194403.79b9884d.jpg";
 },{}],"Ca9Z":[function(require,module,exports) {
 module.exports="/me/IMG_20200503_112447.0ff84b29.jpg";
 },{}],"VNcO":[function(require,module,exports) {
 module.exports="/me/IMG_20200919_122546.b8b4dd6b.jpg";
 },{}],"ZCID":[function(require,module,exports) {
 module.exports="/me/adil_footer.a354d4f7.jpg";
-},{}],"aAT6":[function(require,module,exports) {
-module.exports="/me/IMG_20191202_194403.79b9884d.jpg";
+},{}],"DA4W":[function(require,module,exports) {
+module.exports="/me/IMG_20200313_123608_2.f0c6c257.jpg";
 },{}],"AsCv":[function(require,module,exports) {
-module.exports={IMG_20191211_161140:require("./IMG_20191211_161140.jpg"),IMG_20191226_130135:require("./IMG_20191226_130135.jpg"),IMG_20200104_230058_943:require("./IMG_20200104_230058_943.jpg"),IMG_20200313_123608_2:require("./IMG_20200313_123608_2.jpg"),IMG_20200503_112447:require("./IMG_20200503_112447.jpg"),IMG_20200919_122546:require("./IMG_20200919_122546.jpg"),adil_footer:require("./adil_footer.jpg"),IMG_20191202_194403:require("./IMG_20191202_194403.jpg")};
-},{"./IMG_20191211_161140.jpg":"TXKe","./IMG_20191226_130135.jpg":"mGXD","./IMG_20200104_230058_943.jpg":"R6c6","./IMG_20200313_123608_2.jpg":"DA4W","./IMG_20200503_112447.jpg":"Ca9Z","./IMG_20200919_122546.jpg":"VNcO","./adil_footer.jpg":"ZCID","./IMG_20191202_194403.jpg":"aAT6"}],"B6dB":[function(require,module,exports) {
+module.exports={IMG_20191211_161140:require("./IMG_20191211_161140.jpg"),IMG_20191226_130135:require("./IMG_20191226_130135.jpg"),IMG_20200104_230058_943:require("./IMG_20200104_230058_943.jpg"),IMG_20191202_194403:require("./IMG_20191202_194403.jpg"),IMG_20200503_112447:require("./IMG_20200503_112447.jpg"),IMG_20200919_122546:require("./IMG_20200919_122546.jpg"),adil_footer:require("./adil_footer.jpg"),IMG_20200313_123608_2:require("./IMG_20200313_123608_2.jpg")};
+},{"./IMG_20191211_161140.jpg":"TXKe","./IMG_20191226_130135.jpg":"mGXD","./IMG_20200104_230058_943.jpg":"R6c6","./IMG_20191202_194403.jpg":"aAT6","./IMG_20200503_112447.jpg":"Ca9Z","./IMG_20200919_122546.jpg":"VNcO","./adil_footer.jpg":"ZCID","./IMG_20200313_123608_2.jpg":"DA4W"}],"B6dB":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var t=e(require("jquery"));window.jQuery=t.default,require("jquery-backstretch");var l=e(require("../images/banners/*.jpg"));require("@fancyapps/fancybox"),require("@fancyapps/fancybox/dist/jquery.fancybox.css");var a=e(require("../images/photos/*.jpg"));t.default(function(){t.default(".preloader").delay(500).fadeOut("slow"),t.default("body").backstretch(Object.values(l.default),{duration:3200,fade:1300}),t.default(".btn-expand").on("click",function(e){e.preventDefault(),"Less"!==t.default(this).text()?t.default(this).text("Less"):t.default(this).text("More"),t.default(this).siblings(".expandable").slideToggle()}),t.default(".btn-more-skills").click(function(e){e.preventDefault(),o()}),t.default(".skill-close").click(function(){t.default(".skills-container").slideUp()});var e=t.default(".photos");Object.values(a.default).forEach(function(l){e.append(t.default("<a />",{href:l,"data-fancybox":"gallery"}))}),t.default('[data-fancybox="gallery"]').fancybox({}),t.default(".btn-about-more").on("click",function(e){e.preventDefault(),t.default(".about-more").slideToggle()}),t.default("#skill-overview a:not(.btn-more-skills)").on("click",function(e){var l=this;e.preventDefault();var a,o=t.default(".skills-container");o.is(":hidden")?o.slideDown(function(){var e;null===(e=t.default(t.default(l).attr("href")).get(0))||void 0===e||e.scrollIntoView({behavior:"smooth"})}):null===(a=t.default(t.default(this).attr("href")).get(0))||void 0===a||a.scrollIntoView({behavior:"smooth"})});var o=function(e){var l,a,o=t.default(".skills-container"),i=o.is(":hidden");i||t.default("html, body").animate({scrollTop:null!==(l=null===(a=o.offset())||void 0===a?void 0:a.top)&&void 0!==l?l:0},e);t.default(".skills-container").slideDown(function(){var l,a;i&&t.default("html, body").animate({scrollTop:null!==(l=null===(a=o.offset())||void 0===a?void 0:a.top)&&void 0!==l?l:0},e)})};t.default("[data-scroll-to]").on("click",function(e){var l;e.preventDefault();var a=t.default(this).attr("data-scroll-to");null===(l=t.default(a).get(0))||void 0===l||l.scrollIntoView({behavior:"smooth"})})});
 },{"jquery":"HlZQ","jquery-backstretch":"hSul","../images/banners/*.jpg":"hB06","@fancyapps/fancybox":"C0dk","@fancyapps/fancybox/dist/jquery.fancybox.css":"MwTK","../images/photos/*.jpg":"AsCv"}]},{},["B6dB"], null)
-//# sourceMappingURL=/me/src.ff6ae93a.js.map
+//# sourceMappingURL=/me/src.c0291b56.js.map
