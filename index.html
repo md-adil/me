@@ -10,11 +10,7 @@
         <link rel="stylesheet" href="./src/style.css" />
         <link rel="stylesheet" href="./css/font-awesome.min.css" />
     </head>
-    <body
-        data-spy="scroll"
-        data-target=".navbar-collapse"
-        class="text-gray-700"
-    >
+    <body data-spy="scroll" data-target=".navbar-collapse" class="text-gray-700">
         <!-- preloader section -->
         <div class="preloader">
             <div class="sk-spinner sk-spinner-wordpress">
@@ -24,10 +20,7 @@
         <!-- header section -->
         <header>
             <div class="container mx-auto p-4">
-                <div
-                    class="flex justify-center items-center text-white text-center"
-                    style="height: 80vh"
-                >
+                <div class="flex justify-center items-center text-white text-center" style="height: 80vh">
                     <include src="contents/header.html" />
                 </div>
             </div>
@@ -64,34 +57,18 @@
                     <p class="my-2">Copyright &copy; 2020 Adil</p>
                     <ul class="social-icons flex justify-center">
                         <li>
-                            <a
-                                target="facebook"
-                                href="https://www.facebook.com/adil.sudo"
-                                class="fa fa-facebook"
-                            ></a>
+                            <a target="facebook" href="https://www.facebook.com/adil.sudo" class="fa fa-facebook"></a>
                         </li>
                         <!-- <li><a href="#" class="fa fa-google-plus"></a></li> -->
                         <li>
-                            <a
-                                target="twitter"
-                                href="https://twitter.com/_MdAdil"
-                                class="fa fa-twitter"
-                            ></a>
+                            <a target="twitter" href="https://twitter.com/_MdAdil" class="fa fa-twitter"></a>
                         </li>
                         <!-- <li><a href="#" class="fa fa-dribbble"></a></li> -->
                         <li>
-                            <a
-                                target="github"
-                                href="https://github.com/md-adil"
-                                class="fa fa-github"
-                            ></a>
+                            <a target="github" href="https://github.com/md-adil" class="fa fa-github"></a>
                         </li>
                         <li>
-                            <a
-                                target="linked"
-                                href="https://www.linkedin.com/in/md-adil/"
-                                class="fa fa-linkedin"
-                            ></a>
+                            <a target="linked" href="https://www.linkedin.com/in/md-adil/" class="fa fa-linkedin"></a>
                         </li>
                     </ul>
                 </div>
@@ -99,15 +76,8 @@
         </footer>
         <!-- javascript js -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous"
-        ></script>
-        <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id={{ ga_code }}"
-        ></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_code }}"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -116,6 +86,6 @@
             gtag("js", new Date());
             gtag("config", "{{ ga_code }}");
         </script>
-        <script src="./src/index.ts"></script>
+        <script type="module" src="./src/index.ts"></script>
     </body>
 </html>

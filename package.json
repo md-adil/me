@@ -1,25 +1,29 @@
 {
+  "homepage": "https://md-adil.github.io/me/",
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
-    "fancybox": "^3.0.1",
-    "jquery": ">=1.9.0",
-    "jquery-backstretch": "^2.1.18",
-    "parcel": "^2.0.0-beta.2"
+    "jquery-backstretch": "^2.1.18"
   },
   "license": "MIT",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "rm -r ./docs/* && parcel build index.html --public-url /me --dist-dir ./docs"
+    "dev": "parcel index.html",
+    "build": "rm -rf ./dist && parcel build index.html --public-url /me --dist-dir ./dist",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@babel/preset-env": "^7.21.5",
     "@babel/preset-typescript": "^7.13.0",
     "@parcel/transformer-sass": "2.0.0-beta.2",
-    "@types/fancybox": "^3.5.2",
     "@types/jquery": "^3.5.1",
     "@types/jquery-backstretch": "^2.0.15",
     "autoprefixer": "^10.0.2",
     "babel-plugin-transform-glob-import": "^1.0.1",
+    "gh-pages": "^5.0.0",
+    "parcel": "^2.8.3",
     "postcss": "^8.2.12",
+    "postcss-nested": "^6.0.1",
     "posthtml-expressions": "^1.7.1",
     "posthtml-include": "^1.7.0",
     "tailwindcss": "^2.1.2"

@@ -1,8 +1,9 @@
-@tailwind base;
 @import "./components.css";
 
+@tailwind base;
+
 @tailwind components;
-@tailwind utilities;
+
 body {
     background: #000;
 }
@@ -13,10 +14,8 @@ body {
     margin-bottom: 20px;
 }
 
-.skills {
-    a {
-        color: #fff;
-    }
+.skills a {
+    color: #fff;
 }
 
 .full-skills {
@@ -38,7 +37,8 @@ body {
     }
 }
 .btn-more-skills {
-    &, &:hover {
+    &,
+    &:hover {
         color: #fff;
     }
 }
@@ -54,3 +54,5 @@ body {
 .align-center {
     align-items: center;
 }
+
+@tailwind utilities;
