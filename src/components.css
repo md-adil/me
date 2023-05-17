@@ -3,7 +3,7 @@
     @apply bg-white shadow-sm;
 }
 .card.primary {
-    @apply bg-primary divide-primary-light text-white;
+    @apply bg-primary text-white;
 }
 .card .card-title {
     @apply text-3xl font-medium;

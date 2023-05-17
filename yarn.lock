@@ -1825,6 +1825,13 @@
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
   integrity sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==
 
+"@types/fancybox@^3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@types/fancybox/-/fancybox-3.5.3.tgz#a9c68c8e6ad198d1ec872a7926c2449c93e2ae39"
+  integrity sha512-VmlqpN7Ez/HvSHBdxALh/4gnkBEYLroYe6bTmXkJtQpPVkHTg1SzS/hIdzZKtKLjxeb6zPGK02RqnnB7VQIKtg==
+  dependencies:
+    "@types/jquery" "*"
+
 "@types/jquery-backstretch@^2.0.15":
   version "2.0.15"
   resolved "https://registry.yarnpkg.com/@types/jquery-backstretch/-/jquery-backstretch-2.0.15.tgz#101fc24e9e573395a87d76d4c5128033be1eff8e"

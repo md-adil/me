@@ -16,15 +16,16 @@ $(function () {
     $(".btn-expand").on("click", function (e) {
         e.preventDefault();
         $(this).text() !== "Less" ? $(this).text("Less") : $(this).text("More");
-        $(this).siblings(".expandable").slideToggle();
+        $(".expandable").slideToggle();
     });
 
-    $(".btn-more-skills").click(function (e) {
+    $(".btn-more-skills").on('click', function (e) {
         e.preventDefault();
         expandSkills();
     });
-    $(".skill-close").click(function () {
-        $(".skills-container").slideUp();
+
+    $(".skill-close").on('click', function () {
+        $("#detailed-skills").slideUp();
     });
 
     const $photos = $(".photos");
@@ -32,9 +33,7 @@ $(function () {
         $photos.append($("<a />", { href: photo, "data-fancybox": "gallery" }));
     });
 
-    $('[data-fancybox="gallery"]').fancybox({
-        // Options will go here
-    });
+    $('[data-fancybox="gallery"]').fancybox();
 
     $(".btn-about-more").on("click", (e) => {
         e.preventDefault();
@@ -43,7 +42,7 @@ $(function () {
 
     $("#skill-overview a:not(.btn-more-skills)").on("click", function (e) {
         e.preventDefault();
-        const fullSkills = $(".skills-container");
+        const fullSkills = $("#detailed-skills");
         if (fullSkills.is(":hidden")) {
             fullSkills.slideDown(() => {
                 $($(this).attr("href")!).get(0)?.scrollIntoView({ behavior: "smooth" });
@@ -54,7 +53,7 @@ $(function () {
     });
 
     const expandSkills = (cb?: () => void) => {
-        const container = $(".skills-container");
+        const container = $("#detailed-skills");
         const isHidden = container.is(":hidden");
         if (!isHidden) {
             $("html, body").animate(
@@ -64,7 +63,7 @@ $(function () {
                 cb
             );
         }
-        $(".skills-container").slideDown(() => {
+        container.slideDown(() => {
             if (isHidden) {
                 $("html, body").animate(
                     {

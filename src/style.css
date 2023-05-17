@@ -55,4 +55,22 @@ body {
     align-items: center;
 }
 
+.info-block {
+    @apply py-4;
+    .title {
+        @apply text-lg font-medium;
+    }
+    
+    ul {
+        @apply list-disc list-inside pl-2;
+    }
+    h5 {
+        @apply font-medium py-1;
+    }
+    p {
+        @apply pb-2;
+    }
+}
+
+
 @tailwind utilities;

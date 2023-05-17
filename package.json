@@ -16,6 +16,7 @@
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-typescript": "^7.13.0",
     "@parcel/transformer-sass": "2.0.0-beta.2",
+    "@types/fancybox": "^3.5.3",
     "@types/jquery": "^3.5.1",
     "@types/jquery-backstretch": "^2.0.15",
     "autoprefixer": "^10.0.2",
