@@ -2,6 +2,31 @@
 .card {
     @apply bg-white shadow-sm;
 }
+
+.skill-heading {
+    border-bottom: 1px solid #3b83f6d4;
+    display:inline-block
+
+}
+.education-description {
+    font-weight: 300;
+    margin-top: 0.7rem;
+}
+
+.education-content h4 {
+    line-height: 14px;
+    color: #60a9f0;
+    font-size: 24px !important;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.education-school h5 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
 .card.primary {
     @apply bg-primary text-white;
 }

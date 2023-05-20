@@ -4,9 +4,21 @@
 
 @tailwind components;
 
+
+
 body {
     background: #000;
 }
+
+
+
+.ul li {
+    list-style: disc;
+    margin-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 .backstretch {
     opacity: 0.5;
 }
@@ -28,13 +40,12 @@ body {
     .skill-description {
         margin-left: 10px;
     }
+
     .skill-heading {
         text-align: center;
-        strong {
-            border-bottom: 1px solid #858789;
-        }
         margin-bottom: 10px;
     }
+
 }
 .btn-more-skills {
     &,
