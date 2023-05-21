@@ -10,6 +10,7 @@ body {
 .backstretch {
     opacity: 0.5;
 }
+
 .progress {
     margin-bottom: 20px;
 }
@@ -36,23 +37,12 @@ body {
         margin-bottom: 10px;
     }
 }
+
 .btn-more-skills {
     &,
     &:hover {
         color: #fff;
     }
-}
-.flex {
-    display: flex;
-}
-.justify-center {
-    justify-content: center;
-}
-.justify-space-between {
-    justify-content: space-between;
-}
-.align-center {
-    align-items: center;
 }
 
 .info-block {
@@ -60,7 +50,7 @@ body {
     .title {
         @apply text-lg font-medium;
     }
-    
+
     ul {
         @apply list-disc list-inside pl-2;
     }
@@ -71,6 +61,5 @@ body {
         @apply pb-2;
     }
 }
-
 
 @tailwind utilities;
