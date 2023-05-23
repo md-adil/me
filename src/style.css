@@ -4,9 +4,18 @@
 
 @tailwind components;
 
+
 body {
+    font-family: 'Nunito Sans', sans-serif;
     background: #000;
 }
+
+.my-name {
+   color: #3b83f6;
+    font-weight: bolder;
+    text-shadow: 0 0 white;
+}
+
 
 .ul li {
     list-style: disc;
