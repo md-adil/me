@@ -2019,7 +2019,7 @@ babel-plugin-polyfill-regenerator@^0.4.1:
 babel-plugin-transform-glob-import@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-glob-import/-/babel-plugin-transform-glob-import-1.0.1.tgz#20f3c3ef56b3b987c2b1680cc2fb950656c3ca01"
-  integrity sha1-IPPD71azuYfCsWgMwvuVBlbDygE=
+  integrity sha512-F6p/OOQgkxWbdgW5SCHnLAPwaQvM1bOgrXF/RnteCo0BTgRnBqWBmTcZuL0RHpnwBhaw6UKrXNFpTrioWdMBMA==
   dependencies:
     babel-template "^6.26.0"
     glob "^7.1.2"
