@@ -4,20 +4,17 @@
 }
 
 .skill-description {
-    @apply ml-2;
-    @apply mt-1
+    @apply ml-2 mt-1;
 }
 
-.skill strong{
-  
-    @apply text-black
+.skill strong {
+    @apply text-black;
 }
 
 .skill-heading {
     border-bottom: 2px solid #3b83f6d4;
-    display:inline-block;
-    color:#3366cc
-
+    display: inline-block;
+    color: #3366cc;
 }
 .education-description {
     font-weight: 300;
@@ -71,7 +68,9 @@
 .card .card-title {
     @apply text-3xl font-medium;
 }
-.card-body, .card-footer, .card-header  {
+.card-body,
+.card-footer,
+.card-header {
     @apply px-10;
 }
 .card-body {
